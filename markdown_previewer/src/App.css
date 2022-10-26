@@ -1,0 +1,42 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+  background-color: bisque;
+  min-height: 100vh;
+  font-family:'Courier New', Courier, monospace;
+}
+
+:root{
+  --BORDER : 1px solid black;
+}
+#content{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 50px;
+  gap: 1rem;
+}
+
+#editor{
+  background-color: #d3d3d3;
+  font-size: 1.5rem;
+
+}
+
+#preview{
+  border: var(--BORDER);
+  background-color: #DCCACA;
+}
+
+.content-box{
+  width: 95%;
+  height: clamp(400px, 75vh, 600px);
+  margin: auto;
+  overflow: auto;
+}
