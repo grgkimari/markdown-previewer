@@ -39,4 +39,25 @@
   height: clamp(400px, 75vh, 600px);
   margin: auto;
   overflow: auto;
+  padding: 0.25rem;
+}
+
+p{
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 720px) {
+  #content {
+    flex-direction: row;
+  }
+
+  .content-box{
+    width: 45vw;
+    margin: auto;
+    
+  }
+
+  #content {
+    margin: 10px;
+  }
 }
