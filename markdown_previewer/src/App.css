@@ -25,13 +25,18 @@
 
 #editor{
   background-color: #d3d3d3;
-  font-size: 1.5rem;
 
 }
 
 #preview{
   border: var(--BORDER);
-  background-color: #DCCACA;
+  background-color: white;
+  text-align: left;
+  font-size: 1.1.5rem;
+}
+
+#preview img {
+  max-width: 100%;  
 }
 
 .content-box{
@@ -42,9 +47,6 @@
   padding: 0.25rem;
 }
 
-p{
-  font-size: 2rem;
-}
 
 @media screen and (min-width: 720px) {
   #content {
