@@ -1,5 +1,4 @@
-
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -9,13 +8,13 @@
   text-align: center;
   background-color: bisque;
   min-height: 100vh;
-  font-family:'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 
-:root{
-  --BORDER : 1px solid black;
+:root {
+  --BORDER: 1px solid black;
 }
-#content{
+#content {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -23,12 +22,11 @@
   gap: 1rem;
 }
 
-#editor{
+#editor {
   background-color: #d3d3d3;
-
 }
 
-#preview{
+#preview {
   border: var(--BORDER);
   background-color: white;
   text-align: left;
@@ -36,10 +34,10 @@
 }
 
 #preview img {
-  max-width: 100%;  
+  max-width: 100%;
 }
 
-.content-box{
+.content-box {
   width: 95%;
   height: clamp(400px, 75vh, 600px);
   margin: auto;
@@ -47,16 +45,14 @@
   padding: 0.25rem;
 }
 
-
 @media screen and (min-width: 720px) {
   #content {
     flex-direction: row;
   }
 
-  .content-box{
+  .content-box {
     width: 45vw;
     margin: auto;
-    
   }
 
   #content {

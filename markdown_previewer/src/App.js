@@ -1,10 +1,10 @@
-import './App.css';
-import {useState} from 'react'
-import {marked} from 'marked'
+import "./App.css";
+import { useState } from "react";
+import { marked } from "marked";
 
 marked.setOptions({
   breaks: true,
-})
+});
 
 function App() {
   const [text, setText] = useState(`
@@ -39,20 +39,27 @@ Embedded images:
 
 ![freeCodeCamp Logo](https://cdn.freecodecamp.org/testable-projects-fcc/images/fcc_secondary.svg)
 
-  `)
+  `);
   return (
     <div className="App">
       <h1>Markdown Previewer</h1>
       <section id="content">
-      <textarea className="textarea content-box" id="editor" value={text}  placeholder="Type markdown here" onChange = {(event) => {
-        setText(event.target.value)
-        
-        }}></textarea>
-      <div id="preview" className="content-box" dangerouslySetInnerHTML={{
-        __html: marked.parse(text)
-      }}>
-        
-      </div>
+        <textarea
+          className="content-box"
+          id="editor"
+          value={text}
+          placeholder="Type markdown here"
+          onChange={(event) => {
+            setText(event.target.value);
+          }}
+        ></textarea>
+        <div
+          id="preview"
+          className="content-box"
+          dangerouslySetInnerHTML={{
+            __html: marked.parse(text),
+          }}
+        ></div>
       </section>
     </div>
   );
